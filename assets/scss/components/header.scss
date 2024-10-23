@@ -1,0 +1,105 @@
+header{
+    @include shado-1();
+    .header-top{
+        background-color: #000000;
+        color: #FFF;
+        .cont-det{
+            li{
+                float: left;
+                padding: 10px;
+                font-size: .9rem;
+            }
+        }
+        .social-link{
+            float: right;
+            li{
+                float: left;
+                padding: 10px 15px;
+                font-size: .8rem;
+                color: #FFF !important;
+                a{
+                    color: #FFF !important;
+                }
+            }
+        }
+    }
+    .header-bottom{
+        .logo{
+            img{
+                margin-top: 34px;
+                @media screen and (max-width: 767px){
+                    max-width: 250px;
+                    margin-top: 0px;
+                }
+                @media screen and (max-width: 340px){
+                    max-width: 220px;
+                }
+            }
+        }
+        .contact{
+            ul{
+                float: right;
+                
+                li{
+                    float: left;
+                   
+                }
+            }
+            .cont-ro{
+                display: flex;
+                padding: 10px;
+                .ico{
+                    padding: 10px 5px;
+                    margin: auto;
+                    i{
+                        font-size: 1.5rem;
+                    }
+                }
+                .det{
+                    padding: 10px 15px;
+                    p{
+                        font-size: .85rem;
+                    }
+                    b{
+                        font-size: .9rem;
+                        color: #f26522;
+                    }
+                }
+                .btn-danger{
+                    margin-top: 12px;
+                }
+            }
+        }
+        .nav-part{
+            ul{
+                float: right;
+                @media screen and (max-width: 767px){
+                    float: left;
+                    width: 100%;
+                }
+                li{
+                    float: left;
+                    padding: 10px 20px;
+                    @media screen and (max-width: 811px){
+                        padding: 10px 15px;
+                    }
+                    @media screen and (max-width: 767px){
+                        float: none;
+                        width: 100%;
+                        border-bottom: 1px solid #cccccc94;
+                    }
+                    .sub-pages{
+                        position: absolute;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.small-menu{
+    float: right;
+    margin-top: 12px;
+    font-size: 2rem;
+    color:$color-primary;
+}

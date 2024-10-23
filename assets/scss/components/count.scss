@@ -1,0 +1,19 @@
+.bus-count{
+    margin-top: 20px;
+    @include big-padding();
+    background-color:$color-primary;
+    color: #FFF;
+    .bus-coo{
+        margin: auto;
+    }
+    .ccv{
+        text-align: center;
+        b{
+           font-size: 42px; 
+            color: #fff;
+        }
+        p{
+            font-size: .9rem;
+        }
+    }
+}
